@@ -28,34 +28,6 @@ like [AWS S3](https://aws.amazon.com/s3/), we will need a way to allow an
 instructor to upload video content and send it to consumers of the learning
 device.
 
-```mermaid
-sequenceDiagram
-  participant T as Video Instructor
-  participant G as Instructor's Application
-  participant C as Digital Course
-  participant F as Flash Drive
-
-  T -->> T: Record Class Content
-  T -->> G: Upload recording, add annotations, etc.
-  G -->> G: Validate recording size to not overload pi hard disk
-      alt Recording is valid
-          G->>T: Give teacher an error, or compress video
-      else Recording is not valid
-          G->>C: Add video to digital course
-      end
-  G -->> G: Validate recording size to not overload pi hard disk
-      alt Recording is valid
-          G->>T: Give teacher an error, or compress video
-      else Recording is not valid
-          G->>C: Add video to digital course
-      end
-  T -->> G: Click a "Upload" button
-  G -->> C: Get All Course Values
-  C -->> G: Values
-  G -->> G: Do we need to encrypt the course or anything?
-  G -->> F: Upload Course
-```
-
 ## The "Delivery" Process
 
 Assuming that our target consumers for of the content already have their

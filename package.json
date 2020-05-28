@@ -15,5 +15,8 @@
   "homepage": "https://github.com/slinkardbrandon/personal-learning-device#readme",
   "scripts": {
     "test": ""
+  },
+  "devDependencies": {
+    "@mermaid-js/mermaid-cli": "^8.5.1-2"
   }
 }
