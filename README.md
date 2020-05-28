@@ -28,6 +28,8 @@ like [AWS S3](https://aws.amazon.com/s3/), we will need a way to allow an
 instructor to upload video content and send it to consumers of the learning
 device.
 
+![Content Upload Process](./docs/content-upload.mmd.svg)
+
 ## The "Delivery" Process
 
 Assuming that our target consumers for of the content already have their
@@ -40,18 +42,7 @@ flash drives.
 - When the user plugs in the flash drive we could even deliver system
   updates to their _learning systems_.
 
-```mermaid
-sequenceDiagram
-  participant S as Student
-  participant L as Learning System
-
-  S -->> S: Receives flash drive via Mail
-  S -->> L: Plug Flash Drive into learning system
-  L -->> S: Give Course Overview UI
-  S --> L: Watch instructional videos to unlock tests
-  S -->> L: Take test defined by instructor to complete first course (or class)
-
-```
+![Delivery Process](./docs/delivery-process.mmd.svg)
 
 ## The "Learning" Process
 
