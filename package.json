@@ -1,0 +1,19 @@
+{
+  "name": "personal-learning-device",
+  "version": "0.1.0",
+  "description": "Personal Learning Device",
+  "main": "index.js",
+  "author": "Brandon Slinkard",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slinkardbrandon/personal-learning-device.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/slinkardbrandon/personal-learning-device/issues"
+  },
+  "homepage": "https://github.com/slinkardbrandon/personal-learning-device#readme",
+  "scripts": {
+    "test": ""
+  }
+}
